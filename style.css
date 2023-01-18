@@ -1,0 +1,34 @@
+p {
+    background-color: antiquewhite;
+    color: blueviolet;
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Franklin Gothic Book", cursive;
+    font-weight: bold;
+}
+
+.star {
+    color: yellow;
+}
+
+#felix {
+    color: red;
+}
+
+input[type="email"] {
+    color: blueviolet;
+}
+
+#hi-duy {
+    background-color: antiquewhite;
+    color: blueviolet;
+    display: inline;
+    font-size: 30px;
+    text-align: center;
+}
+
+div {
+    text-align: center;
+    border: red 2px solid;
+}

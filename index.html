@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Twitter</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <!-- Heading, Paragraph and Span    -->
@@ -17,16 +18,18 @@
 <p>This is a long paragraph This is a long paragraph This is a long paragraph This is a long paragraph This is a long
     paragraph This is a long paragraph</p>
 
-<!-- span is a box to contains text, nothing more. We can custom a block of span by CSS -->
-<span>Hello</span>
-<span>Duyyyyyyyyyyyyyyyyyyyyy</span>
+<div>
+    <!-- span is a box to contains text, nothing more. We can custom a block of span by CSS -->
+    <span>Hello</span>
+    <span id="hi-duy">Duyyyyyyyyyyyyyyyyyyyyy</span>
+</div>
 
 <!-- List and Imga -->
 <h2> Chelsea's New Players</h2>
 <img src="Chelsea_FC.svg.png" alt="Chelsea logo" width="120" height="120">
 <ul> <!-- Stand for Unordered List -->
-    <li>Mudrik</li> <!-- Stand for list item -->
-    <li>Felix</li>
+    <li class="star">Mudrik</li> <!-- Stand for list item -->
+    <li id="felix">Felix</li>
     <li>Fofana</li>
     <ul>
         <li>Sterling</li>
@@ -76,7 +79,8 @@
 
 </form>
 
-<br><hr>
+<br>
+<hr>
 
 <!-- Semantic Elements -->
 <header>Twitter</header>
