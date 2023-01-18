@@ -41,3 +41,27 @@ div {
     height: 500px;
     box-sizing: border-box;
 }
+
+#click-me:hover {
+ color: yellow;
+}
+
+.dropdown-content a {
+    display: none;
+}
+
+.content:hover .dropdown-content a {
+    display: block;
+    color: red;
+}
+
+section {
+    background-color: aquamarine;
+}
+
+section div p {
+    background-color: yellow;
+    width: 50%;
+}
+
+
