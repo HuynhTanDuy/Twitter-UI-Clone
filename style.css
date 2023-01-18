@@ -32,3 +32,12 @@ div {
     text-align: center;
     border: red 2px solid;
 }
+
+#box {
+    border: red 5px solid;
+    margin: 100px 50px;
+    padding-bottom: 70px;
+    width: 300px;
+    height: 500px;
+    box-sizing: border-box;
+}
