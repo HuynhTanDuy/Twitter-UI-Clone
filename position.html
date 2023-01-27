@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Position</title>
+    <style>
+        .container {
+            background-color: beige;
+            width: 500px;
+            height: 1500px;
+        }
+
+        /*position by a normal flow, not affected by top left right bottom properties*/
+        .box {
+            background-color: cornflowerblue;
+            position: static;
+        }
+
+        /*positioned relative by its normal position, affected by top left righ bottom properties*/
+        .box1 {
+            background-color: red;
+            position: relative;
+            top: 10px;
+        }
+
+        /*Fixed by the viewport*/
+        .box2 {
+            background-color: green;
+            position: fixed;
+        }
+
+        /*positioned related to the nearest parrent element*/
+        .box3 {
+            background-color: blue;
+            position: absolute;
+            top: 500px;
+            left: 500px;
+        }
+
+        .box4 {
+            position: sticky;
+            top: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box box1">BOX 1</div>
+    <div class="box box2">BOX 2</div>
+    <div class="box box3">BOX 3</div>
+    <div class="box box4">BOX 4</div>
+</div>
+</body>
+</html>
