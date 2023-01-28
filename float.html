@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: grey;
+            border: 2px solid green;
+            overflow: auto;
+        }
+
+        /*Float element jump out of the normal flow of the page*/
+        .box1 {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+
+        .box2 {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+</html>
