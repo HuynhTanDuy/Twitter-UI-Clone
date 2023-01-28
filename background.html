@@ -8,13 +8,19 @@
     <title>Document</title>
     <style>
         div {
-            width: 500px;
-            height: 500px;
+            width: 1000px;
+            height: 1000px;
             background-image: url("image/cafe_backgound.jpg");
+            border: 50px double red;
             color: red;
             background-repeat: no-repeat;
-            background-position: 50% 50%;
+            /*background-position: 50% 50%;*/
             background-attachment: scroll;
+            background-size: cover;
+            /*Define origin position (start from top left ?)*/
+            background-origin: content-box;
+            /*Define how far the background should extend*/
+            background-clip: border-box;
         }
     </style>
 </head>
