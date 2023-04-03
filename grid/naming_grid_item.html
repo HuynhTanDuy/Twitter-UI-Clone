@@ -14,8 +14,8 @@
         background-color: aliceblue;
         margin: auto;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: [header-start] 1fr [header-end main-start] 1fr 1fr [main-end box-start] 1fr [box-end footer-start] 1fr [footer-end];
+        grid-template-columns: repeat(4, [col-start] 1fr [col-end]);
         grid-gap: 1rem;
     }
 
@@ -28,21 +28,24 @@
     }
 
     .header {
-        grid-column: 1 / -1;
+        grid-column: col-start 1 / col-end -1;
+        grid-row: header-start / header-end;
     }
 
 
     .sidebar {
-        grid-column: 1;
-        grid-row: 2/ span 2;
+        grid-column: col-start 1 / col-end 1;
+        grid-row: main-start/ box-end;
     }
 
     .main {
-        grid-column: 2 / span 3;
+        grid-column: col-start 2 / col-end -1;
+        grid-row: main-start/main-end;
     }
 
     .footer {
-        grid-column: 1 / -1;
+        grid-column: col-start 1 / col-end -1;
+        grid-rows: footer-start/footer-end;
     }
 </style>
 <body>
