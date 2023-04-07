@@ -9,17 +9,21 @@
 </head>
 <style>
     .container {
-        width: 600px;
-        background-color: aliceblue;
+        width: 800px;
+        height: 600px;
+        background-color: grey;
         margin: auto;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 150px);
         grid-template-rows: repeat(4, 100px);
         /*horizontally*/
-        justify-items: start;
+        /*justify-items: start;*/
+        justify-content: space-between;
 
         /*vertically*/
-        align-items: stretch;
+        /*align-items: stretch;*/
+        align-content: start;
+
         grid-gap: 1rem;
     }
 
@@ -31,8 +35,7 @@
     }
 
     .item2 {
-        justify-self: center;
-        align-self: end;
+
     }
 </style>
 <body>
