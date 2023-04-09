@@ -9,13 +9,14 @@
 </head>
 <style>
     .container {
-        width: 800px;
+        width: 90%;
         height: 600px;
         background-color: grey;
         margin: auto;
         display: grid;
-        grid-template-columns: max-content 150px 150px minmax(400px, 500px);
-        grid-template-rows: 150px 150px;
+        grid-template-columns: repeat(auto-fit, minmax(80px,1fr));
+        /*grid-template-columns: max-content 150px 150px minmax(400px, 500px);*/
+        /*grid-template-rows: 150px 150px;*/
         /*horizontally*/
         /*justify-items: start;*/
         justify-content: space-between;
