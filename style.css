@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: "Josefins Sans", sans-serif;
+    outline: none;
 }
 
 html {
@@ -52,6 +53,47 @@ html {
     display: flex;
     justify-content: center;
     margin-top: 3rem;
+}
+
+.right-content div {
+    position: relative;
+}
+
+
+.right-content label {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #a7a6a6;
+}
+
+.right-content form input {
+    margin-right: 0.2rem;
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    transition: background-color 0.5s;
+}
+
+.right-content form input:hover {
+    background-color: #d9ebf7;
+}
+
+.log-in-btn {
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    background-color: #fff;
+    color: #1aa1f5;
+    border-radius: 3rem;
+    width: 8rem;
+    border: 0.1rem solid #1aa1f5;
+    transition: background-color 0.5s;
+}
+
+.log-in-btn:hover {
+    background-color: #d9ebf7;
 }
 
 .middle-content {
