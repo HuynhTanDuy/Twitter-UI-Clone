@@ -74,6 +74,7 @@ html {
     font-size: 1.6rem;
     padding: 0.5rem;
     transition: background-color 0.5s;
+    border-radius: 2rem;
 }
 
 .right-content form input:hover {
@@ -101,5 +102,52 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.middle-content i {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #1aa1f5;
+    line-height: 4rem;
+}
+
+.middle-content h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    line-height: 4rem;
+}
+
+.middle-content h3 {
+    font-size: 2rem;
+}
+
+.middle-content button {
+    font-size: 1.6rem;
+    margin: 0.8rem 0;
+    padding: 0.5rem;
+    border: 0.1rem solid #1aa1f5 ;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.sign-up-button {
+    background-color: #1aa1f5;
+    color: #fff;
+}
+
+.sign-up-button:hover {
+    background-color: #0f5d8d;
+}
+
+.log-in-button {
+    background-color: #fff;
+}
+
+.log-in-button:hover {
+    background-color: #d9ebf7;
 }
 
