@@ -151,3 +151,28 @@ html {
     background-color: #d9ebf7;
 }
 
+.footer {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+    justify-content: center;
+    border-top: 0.2rem solid #ddd;
+    background-color: #f5f4f4;
+}
+
+.footer ul {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    margin: 1rem 1rem;
+    list-style: none;
+}
+
+.footer ul a {
+    font-size: 1.6rem;
+    padding-right: 3rem;
+    text-decoration: none;
+    font-weight: 300;
+    color: #444;
+}
+
