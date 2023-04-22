@@ -128,7 +128,7 @@ html {
     font-size: 1.6rem;
     margin: 0.8rem 0;
     padding: 0.5rem;
-    border: 0.1rem solid #1aa1f5 ;
+    border: 0.1rem solid #1aa1f5;
     border-radius: 3rem;
     cursor: pointer;
     transition: background-color 0.5s;
@@ -174,5 +174,29 @@ html {
     text-decoration: none;
     font-weight: 300;
     color: #444;
+}
+
+/*Login page*/
+.login-page {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: minmax(5rem, 1fr) 2fr minmax(5rem, 1fr);
+    grid-template-rows: repeat(2, min-content) 1fr;
+    grid-row-gap: 2rem;
+}
+
+.login-nav {
+    grid-column: 1 / -1;
+    grid-row: 1/2;
+    background-color: #fff;
+    padding: 2.5rem 0;
+}
+
+.log-in {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 100rem;
+    background-color: #fff;
 }
 
