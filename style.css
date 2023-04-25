@@ -10,6 +10,10 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    background-color: #f0f8fd;
+}
+
 .main-page {
     width: 100%;
     height: 100vh;
@@ -248,3 +252,51 @@ html {
 .login-nav li:hover a {
     color: #1aa1f5;
 }
+
+/* login */
+.log-in {
+    display: grid;
+    grid-template-columns: 10rem 8fr;
+    grid-template-rows: 2fr 1fr;
+    width: 100rem;
+}
+
+.login-content {
+    grid-column: 2/-1;
+    grid-row: 1/2;
+}
+
+.login-content h2 {
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+
+.login-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-content form input:not(.checkbox) {
+    width: 30rem;
+    height: 3rem;
+    border: 0.1rem solid #1aa1f5;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.login-form input:focus {
+    background-color: #d9ebf7;
+}
+
+.login-footer {
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+    background-color: #edf3f7;
+    padding-left: 10rem;
+}
+
+
+
+
