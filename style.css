@@ -337,10 +337,10 @@ body {
 }
 
 .feeds-nav {
-    position: absolute;
+    position: fixed;
     display: flex;
     width: 100%;
-    height: 65px;
+    height: 6.5rem;
     background-color: #fff;
     justify-content: center;
     box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.3);
@@ -355,9 +355,9 @@ body {
 }
 
 .icons a {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #9e9a9a;
-    padding-right: 2rem;
+    margin-right: 7rem;
     text-decoration: none;
 }
 
@@ -421,6 +421,39 @@ body {
 user i {
     color: #444;
     font-size: 1.6rem;
+}
+
+
+.feeds-content {
+    display: grid;
+    grid-template-columns: minmax(5rem, 1fr) 60rem 40rem minmax(5rem, 1fr);
+    grid-template-rows: repeat(2, min-content);
+    padding-top: 6.5rem;
+}
+
+.feeds-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 0.1rem #eee;
+    padding: 1.5rem;
+}
+
+.feeds-top h4 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.feeds-top i {
+    font-size: 2rem;
+    color: #1aa1f5;
+}
+
+
+.feeds-header {
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+    background-color: #fff;
 }
 
 
