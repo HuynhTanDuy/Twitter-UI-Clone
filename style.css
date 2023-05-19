@@ -456,6 +456,42 @@ user i {
     background-color: #fff;
 }
 
+.headers-post {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.post-img-wrapper {
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    padding: 0 0.7rem;
+}
+
+.post-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.headers-post input {
+    width: 40rem;
+    height: 3.5rem;
+    border: solid 0.1rem #9e9a9a;
+    border-radius: 3rem;
+    background-color: #d6e1e9;
+    padding-left: 1rem;
+}
+
+.headers-post i {
+    font-size: 2rem;
+    color: #1aa1f5;
+    margin: 0 0.7rem;
+}
+
+
+
 
 
 
