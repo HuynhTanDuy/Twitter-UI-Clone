@@ -454,6 +454,7 @@ user i {
     grid-column: 2 / 3;
     grid-row: 1 / -1;
     background-color: #fff;
+    border: solid 0.1rem #d6e1e9;
 }
 
 .headers-post {
@@ -489,6 +490,76 @@ user i {
     color: #1aa1f5;
     margin: 0 0.7rem;
 }
+
+.posts {
+    grid-column: 2/3;
+    grid-row: 3/-1;
+    background-color: #fff;
+}
+
+.post {
+    display: flex;
+    border: solid 0.1rem #d6e1e9;
+}
+
+.post-user-info {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.user-avatar img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 1rem 2rem
+}
+
+.post h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.post i {
+    color: #1aa1f5;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.post span {
+    font-size: 1.6rem;
+    color: #555555;
+}
+
+.post p {
+    font-size: 1.6rem;
+}
+
+.user-post-img {
+    width: 48rem;
+    height: 30rem;
+}
+
+.user-post-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin: 1rem 0;
+}
+
+.post-icons {
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+
+.post-icons i {
+    font-size: 1.6rem;
+    margin-right: 3rem;
+    color: #9e9a9a;
+}
+
 
 
 
