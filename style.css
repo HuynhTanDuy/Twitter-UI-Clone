@@ -646,6 +646,25 @@ user i {
     margin-right: 1rem;
 }
 
+.post-btn {
+    position: fixed;
+    bottom: 3rem;
+    left: 68%;
+    width: 10rem;
+    height: 5rem;
+    background-color: #1aa1f5;
+    color: #f0f8fd;
+    border-radius: 3rem;
+    border: solid 0.1rem #f0f8fd;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.post-btn:hover {
+    background-color: #117abb;
+}
+
 
 
 
