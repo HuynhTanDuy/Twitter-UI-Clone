@@ -1,4 +1,4 @@
-const loginPage= document.querySelector('.login-page');
+const loginPage = document.querySelector('.login-page');
 const mainPage = document.querySelector('.main-page');
 const feedsPage = document.querySelector('.feeds-page');
 
@@ -14,15 +14,26 @@ middleContent.addEventListener('click', e => {
 });
 
 const logInBtn = document.querySelector('.log-in-btn');
+const logInBtn2 = document.querySelector('#login-btn-2');
+logInBtn2.addEventListener('click', goToFeedsPage);
+
+
 logInBtn.addEventListener('click', () => {
-  const username = document.querySelector('.username-input');
-  const password = document.querySelector('.password-input');
-  console.log('Username is ' + username + ". Password is " + password);
-  if (username.value !== '' && password.value !== '') {
-      console.log('Go to feeds page')
-      mainPage.style.display = 'none';
-      feedsPage.style.display = 'grid';
-  } else {
-      goToLoginPage();
-  }
+    const username = document.querySelector('.username-input');
+    const password = document.querySelector('.password-input');
+    console.log('Username is ' + username + ". Password is " + password);
+    if (username.value !== '' && password.value !== '') {
+        console.log('Go to feeds page')
+        mainPage.style.display = 'none';
+        feedsPage.style.display = 'grid';
+    } else {
+        goToLoginPage();
+    }
 });
+
+
+function goToFeedsPage() {
+    loginPage.style.display = 'none';
+    mainPage.style.display = 'none';
+    feedsPage.style.display = 'grid';
+}
