@@ -17,7 +17,7 @@ body {
 .main-page {
     width: 100%;
     height: 100vh;
-    display: grid;
+    display: none; //grid
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr min-content;
 }
@@ -334,7 +334,7 @@ body {
 .feeds-page {
     width: 100%;
     height: 100vh;
-    display: none;
+    display: block;
 }
 
 .feeds-nav {
@@ -666,6 +666,47 @@ user i {
     background-color: #117abb;
 }
 
+/*modal box*/
+.modal-post-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+.modal-post {
+    background-color: #fff;
+    width: 60rem;
+    border-radius: 1.5rem;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-header {
+    display: flex;
+}
+
+.modal-header i {
+    font-size: 2rem;
+    padding: 3rem 2rem;
+    color: #1aa1f5;
+    font-weight: bold;
+}
+
+.modal-header button {
+    margin-left: auto;
+    width: 8rem;
+    height: 3.5rem;
+    background-color: #1aa1f5;
+    color: white;
+    border-radius: 2rem;
+    margin-top: 2.5rem;
+    margin-right: 3rem;
+}
 
 
 
