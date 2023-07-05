@@ -679,6 +679,7 @@ user i {
 .modal-post {
     background-color: #fff;
     width: 60rem;
+    height: 25rem;
     border-radius: 1.5rem;
     position: absolute;
     top: 25%;
@@ -688,6 +689,7 @@ user i {
 
 .modal-header {
     display: flex;
+
 }
 
 .modal-header i {
@@ -706,6 +708,59 @@ user i {
     border-radius: 2rem;
     margin-top: 2.5rem;
     margin-right: 3rem;
+}
+
+.modal-body {
+    display: flex;
+}
+
+.modal-post-img-wrapper {
+}
+
+.modal-post-img-wrapper img {
+    height: 4rem;
+    width: 4rem;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.modal-body input {
+    width: 45rem;
+    /*height: 8rem;*/
+    border-radius: 3rem;
+    background-color: #dddddd;
+    padding: 1rem 0 8rem 1rem;
+}
+
+.modal-body i {
+    position: absolute;
+    right: 10rem;
+    bottom: 8rem;
+    font-size: 2rem;
+    color: #1aa1f5;
+}
+
+.modal-footer {
+    display: flex;
+    font-size: 2rem;
+    color: #1aa1f5;
+    margin: 1rem 7rem;
+}
+
+.modal-footer i {
+    margin-right: 2rem;
+}
+
+.modal-footer span {
+    width: 4rem;
+    height: 4rem;
+    margin-left: auto;
+    border: 0.1rem solid #1aa1f5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
 }
 
 
