@@ -673,7 +673,14 @@ user i {
     left: 0;
     right: 0;
     bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
+.modal-post-wrapper-appearance {
+    opacity: 1;
+    visibility: visible;
 }
 
 .modal-post {
@@ -685,6 +692,7 @@ user i {
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: none;
 }
 
 .modal-header {
@@ -697,6 +705,7 @@ user i {
     padding: 3rem 2rem;
     color: #1aa1f5;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .modal-header button {
@@ -708,6 +717,7 @@ user i {
     border-radius: 2rem;
     margin-top: 2.5rem;
     margin-right: 3rem;
+    opacity: 0.5;
 }
 
 .modal-body {
@@ -761,6 +771,7 @@ user i {
     justify-content: center;
     align-items: center;
     font-size: 4rem;
+    opacity: 0.5;
 }
 
 

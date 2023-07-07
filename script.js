@@ -37,3 +37,41 @@ function goToFeedsPage() {
     mainPage.style.display = 'none';
     feedsPage.style.display = 'grid';
 }
+
+const postBtn = document.querySelector('.post-btn');
+const modalWrapper = document.querySelector('.modal-post-wrapper')
+const modalPost = document.querySelector('.modal-post')
+const modalXBtn = document.querySelector('.modal-header i');
+const modalPostBtn = document.querySelector('.modal-header button');
+const modalPlusBtn = document.querySelector('.modal-footer span');
+const modalInput = document.querySelector('.modal-body input');
+
+postBtn.addEventListener('click', () => {
+    modalPost.style.display = 'block';
+    modalWrapper.classList.add('modal-post-wrapper-appearance');
+})
+
+modalXBtn.addEventListener('click', () => {
+    modalPost.style.display = 'none';
+    modalWrapper.classList.remove('modal-post-wrapper-appearance');
+    modalInput.value = '';
+    updateOpacity(0.5);
+})
+
+const updateOpacity = x => {
+    modalPostBtn.style.opacity = x;
+    modalPlusBtn.style.opacity = x;
+}
+
+modalInput.addEventListener('keypress', (e) => {
+    if (e.target.value !== '') {
+        updateOpacity(1);
+    }
+})
+
+modalInput.addEventListener('blur', e => {
+    if (e.target.value === '') {
+        updateOpacity(0.5);
+    }
+})
+
