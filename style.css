@@ -859,6 +859,54 @@ user i {
     font-weight: bold;
 }
 
+.sidebar-menu {
+    padding-top: 2rem;
+    border-bottom: 0.1rem solid #eee;
+}
+
+.sidebar-menu ul {
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+.sidebar-menu li {
+    margin-bottom: 2.5rem;
+}
+
+.sidebar-menu li i {
+    margin-right: 2rem;
+}
+
+.sidebar-menu a {
+    text-decoration: none;
+    color: #868383;
+}
+
+.sidebar-menu {
+    padding-top: 2rem;
+    border-bottom: 0.1rem solid #eee;
+}
+
+.sidebar-setting-menu {
+    padding-top: 2rem;
+    border-bottom: 0.1rem solid #eee;
+}
+
+.sidebar-setting-menu ul {
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+.sidebar-setting-menu li {
+    margin-bottom: 2.5rem;
+}
+.sidebar-setting-menu a {
+    text-decoration: none;
+    color: #868383;
+}
+
+
+
 
 
 
