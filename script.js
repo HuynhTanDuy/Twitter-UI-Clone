@@ -75,3 +75,16 @@ modalInput.addEventListener('blur', e => {
     }
 })
 
+// Sidebar
+const userProfile = document.querySelector('.user');
+const sidebar = document.querySelector('.sidebar');
+const sidebarWrapper = document.querySelector('.sidebar-wrapper');
+const sidebarXBtn = document.querySelector('.sidebar-header i')
+userProfile.addEventListener('click', () => {
+    sidebar.classList.add('sidebar-display');
+    sidebarWrapper.classList.add('sidebar-wrapper-display');
+})
+sidebarXBtn.addEventListener('click', () => {
+    sidebar.classList.remove('sidebar-display');
+    sidebarWrapper.classList.remove('sidebar-wrapper-display');
+})

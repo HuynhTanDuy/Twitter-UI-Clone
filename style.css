@@ -398,6 +398,7 @@ body {
     display: flex;
     align-items: center;
     padding-left: 2rem;
+    cursor: pointer;
 }
 
 .user-img-wrapper {
@@ -419,7 +420,7 @@ body {
     margin: 0 1rem;
 }
 
-user i {
+.user i {
     color: #444;
     font-size: 1.6rem;
 }
@@ -636,7 +637,7 @@ user i {
 .follows-footer ul {
     display: flex;
     list-style: none;
-    padding: 2rem 0rem;
+    padding: 2rem 0;
 
 }
 
@@ -781,18 +782,32 @@ user i {
     left: 0;
     bottom: 0;
     right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sidebar-wrapper-display {
+    opacity: 1;
+    visibility: visible;
 }
 
 .sidebar {
     position: fixed;
     top: 0;
-    right: 0;
+    right: -30rem;
     background-color: #fff;
     height: 100vh;
     width: 30rem;
     box-sizing: border-box;
     box-shadow: 5rem 10rem 10rem rgba(0, 0, 0, 0.5);
     padding: 2.5rem;
+    transition: right 0.5s cubic-bezier(1, 0, 0, 1);
+}
+
+.sidebar-display {
+    right: 0;
 }
 
 .sidebar-header {
@@ -808,6 +823,7 @@ user i {
     color: #1aa1f5;
     margin-left: auto;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .sidebar-img {
@@ -900,6 +916,7 @@ user i {
 .sidebar-setting-menu li {
     margin-bottom: 2.5rem;
 }
+
 .sidebar-setting-menu a {
     text-decoration: none;
     color: #868383;
