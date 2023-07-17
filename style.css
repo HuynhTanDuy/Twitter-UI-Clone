@@ -922,6 +922,42 @@ body {
     color: #868383;
 }
 
+.dark-mode {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.dark-mode p {
+    margin-right: 8rem;
+    font-size: 1.6rem;
+    color: #868383;
+}
+
+.toggle {
+    width: 4.5rem;
+    height: 1.5rem;
+    background-color: #777;
+    border-radius: 3rem;
+    position: relative;
+}
+
+.circle {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #ddd;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.2s linear;
+}
+
+.move {
+    left: 2.5rem;
+    background-color: #117abb;
+}
 
 
 

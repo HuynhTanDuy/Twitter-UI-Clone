@@ -88,3 +88,11 @@ sidebarXBtn.addEventListener('click', () => {
     sidebar.classList.remove('sidebar-display');
     sidebarWrapper.classList.remove('sidebar-wrapper-display');
 })
+
+const toggle = document.querySelector('.toggle');
+const circle = document.querySelector('.circle');
+
+toggle.addEventListener('click', () => {
+    circle.classList.toggle('move');
+})
+
