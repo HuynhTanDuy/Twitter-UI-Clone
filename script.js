@@ -91,8 +91,16 @@ sidebarXBtn.addEventListener('click', () => {
 
 const toggle = document.querySelector('.toggle');
 const circle = document.querySelector('.circle');
+const darkMode1 = document.querySelectorAll('.dark-mode-1');
+const darkMode2 = document.querySelectorAll('.dark-mode-2');
 
 toggle.addEventListener('click', () => {
     circle.classList.toggle('move');
+    console.log('hii');
+    Array.from(darkMode1).map(item => item.classList.toggle('dark-1'));
+    Array.from(darkMode2).map(item => item.classList.toggle('dark-2'));
 })
+
+
+
 

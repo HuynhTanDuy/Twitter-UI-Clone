@@ -959,6 +959,22 @@ body {
     background-color: #117abb;
 }
 
+.dark-1 {
+    background-color: #1c2938;
+}
+
+.dark-2 {
+    background-color: #10171e;
+}
+
+.light {
+    background-color: #fff;
+}
+
+.border-color {
+    background-color: #444;
+}
+
 
 
 
