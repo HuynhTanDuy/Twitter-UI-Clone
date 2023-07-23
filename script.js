@@ -93,12 +93,16 @@ const toggle = document.querySelector('.toggle');
 const circle = document.querySelector('.circle');
 const darkMode1 = document.querySelectorAll('.dark-mode-1');
 const darkMode2 = document.querySelectorAll('.dark-mode-2');
+const darkBorder = document.querySelectorAll('.dark-border-mode');
+const lightText = document.querySelectorAll('.light-text-mode');
 
 toggle.addEventListener('click', () => {
     circle.classList.toggle('move');
     console.log('hii');
     Array.from(darkMode1).map(item => item.classList.toggle('dark-1'));
     Array.from(darkMode2).map(item => item.classList.toggle('dark-2'));
+    Array.from(darkBorder).map(item => item.classList.toggle('border-color'));
+    Array.from(lightText).map(item => item.classList.toggle('light'));
 })
 
 

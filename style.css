@@ -622,7 +622,7 @@ body {
 }
 
 .follow-link a {
-    background-color: #fff;
+    /*background-color: #fff;*/
     font-size: 1.6rem;
     color: #1aa1f5;
     padding: 1rem;
@@ -960,20 +960,21 @@ body {
 }
 
 .dark-1 {
-    background-color: #1c2938;
+    background-color: #1c2938 !important;
 }
 
 .dark-2 {
-    background-color: #10171e;
+    background-color: #10171e !important;
 }
 
 .light {
-    background-color: #fff;
+    color: #fff !important;
 }
 
 .border-color {
-    background-color: #444;
+    border-color: #444 !important;
 }
+
 
 
 
