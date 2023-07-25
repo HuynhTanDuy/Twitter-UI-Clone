@@ -17,8 +17,8 @@ body {
 .main-page {
     width: 100%;
     height: 100vh;
-    display: none;
-/ / grid grid-template-columns: repeat(2, 1 fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr min-content;
 }
 
@@ -334,7 +334,8 @@ body {
 .feeds-page {
     width: 100%;
     height: 100vh;
-    display: block;
+    /*display: block;*/
+    display: none;
 }
 
 .feeds-nav {
@@ -974,6 +975,45 @@ body {
 .border-color {
     border-color: #444 !important;
 }
+
+
+/* Responsive*/
+@media (max-width: 1300px) {
+    .middle-content {
+        width: 60%;
+    }
+
+    .main-page footer ul {
+        flex-wrap: wrap;
+    }
+
+    .mian-page footer li {
+        margin-bottom: 1rem;
+    }
+
+    .main-page {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr min-content;
+    }
+
+    .left {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    .right {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .main-page footer {
+        grid-row: 3/4;
+    }
+
+}
+
+
+/* End of Responsesive*/
 
 
 
