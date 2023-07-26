@@ -987,7 +987,7 @@ body {
         flex-wrap: wrap;
     }
 
-    .mian-page footer li {
+    .main-page footer li {
         margin-bottom: 1rem;
     }
 
@@ -999,11 +999,23 @@ body {
     .left {
         grid-row: 2/3;
         grid-column: 1/2;
+        width: 50%;
+        margin: auto;
+    }
+
+    .left-content h3 {
+        line-height: 4rem;
     }
 
     .right {
         grid-row: 1/2;
         grid-column: 1/2;
+        width: 70%;
+        margin: auto;
+    }
+
+    .right-content form {
+        display: none;
     }
 
     .main-page footer {
@@ -1012,6 +1024,35 @@ body {
 
 }
 
+@media (max-width: 1050px) {
+    /*main-page*/
+    .right {
+        width: 70%;
+    }
+
+    .middle-content i {
+        display: none;
+    }
+
+    .middle-content h1 {
+        margin: 2rem 0;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .main-page {
+        grid-template-rows: 1fr min-content;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .middle-content {
+        font-size: 2.5rem;
+    }
+}
 
 /* End of Responsesive*/
 
