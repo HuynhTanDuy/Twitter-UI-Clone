@@ -431,6 +431,7 @@ body {
     display: grid;
     grid-template-columns: minmax(5rem, 1fr) 60rem 40rem minmax(5rem, 1fr);
     grid-template-rows: repeat(2, min-content);
+    padding-top: 1.5rem;
 }
 
 .feeds-top {
@@ -450,6 +451,37 @@ body {
     font-size: 2rem;
     color: #1aa1f5;
 }
+
+/*Left menu*/
+.left-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 275px;
+}
+
+.left-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+.x-logo-wrapper {
+    width: 3rem;
+    height: 3rem;
+}
+
+.x-logo-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/*End of left menu */
 
 
 .feeds-header {
@@ -1066,6 +1098,7 @@ body {
     }
 
 }
+
 @media (max-width: 1050px) {
     .follows {
         display: none;
@@ -1104,8 +1137,6 @@ body {
     .user-avatar {
         margin-right: 2rem;
     }
-
-
 
 
 }
