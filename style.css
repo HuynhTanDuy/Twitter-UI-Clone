@@ -431,7 +431,6 @@ body {
     display: grid;
     grid-template-columns: minmax(5rem, 1fr) 60rem 40rem minmax(5rem, 1fr);
     grid-template-rows: repeat(2, min-content);
-    padding-top: 1.5rem;
 }
 
 .feeds-top {
@@ -481,8 +480,6 @@ body {
     object-fit: cover;
 }
 
-
-
 /*End of left menu */
 
 
@@ -491,6 +488,21 @@ body {
     grid-row: 1 / -1;
     background-color: #fff;
     border: solid 0.1rem #d6e1e9;
+}
+
+.for-you {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+}
+
+.for-you span {
+    margin: auto;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgb(83, 100, 113);
+
 }
 
 .headers-post {
