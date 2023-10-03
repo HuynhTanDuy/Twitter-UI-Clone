@@ -513,8 +513,8 @@ body {
 
 .headers-post {
     display: flex;
-    align-items: center;
-    margin: 1rem 0;
+    align-items: flex-start;
+    margin: 1rem;
 }
 
 .post-img-wrapper {
@@ -531,18 +531,19 @@ body {
 }
 
 .headers-post input {
-    width: 40rem;
+    width: 50rem;
     height: 3.5rem;
-    border: solid 0.1rem #9e9a9a;
-    border-radius: 3rem;
-    background-color: #d6e1e9;
+    border-style: none;
     padding-left: 1rem;
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .headers-post i {
     font-size: 2rem;
     color: #1aa1f5;
-    margin: 0 0.7rem;
+    margin: 0.5rem 0.7rem;
 }
 
 .posts {
