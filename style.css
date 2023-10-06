@@ -493,7 +493,6 @@ body {
     /*grid-row: 1 / -1;*/
     background-color: #fff;
     border: solid 0.1rem #d6e1e9;
-    height: 20rem;
 }
 
 .for-you {
@@ -511,10 +510,22 @@ body {
 
 }
 
+.show-more-post-btn {
+    color: rgb(29, 155, 240);
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .headers-post {
     display: flex;
     align-items: flex-start;
-    margin: 1rem;
+    padding: 1rem;
+    border: solid 0.1rem #d6e1e9;
 }
 
 .post-img-wrapper {
@@ -543,7 +554,7 @@ body {
 .headers-post i {
     font-size: 2rem;
     color: #1aa1f5;
-    margin: 0.5rem 0.7rem;
+    margin: 0.5rem 1rem;
 }
 
 .posts {
