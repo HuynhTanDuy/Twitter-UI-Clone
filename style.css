@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background-color: #f0f8fd;
+    background-color: #fff;
 }
 
 .main-page {
@@ -336,6 +336,7 @@ body {
     width: 100%;
     height: 100vh;
     display: flex;
+    background-color: #fff;
 }
 
 /*.feeds-nav {*/
@@ -430,6 +431,7 @@ body {
 .feeds-content {
     display: grid;
     grid-template-columns: minmax(5rem, 1fr) 60rem 40rem minmax(5rem, 1fr);
+    background-color: #fff;
     /*grid-template-rows: repeat(2, min-content);*/
 }
 
@@ -462,12 +464,13 @@ body {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
+    background-color: #fff;
 }
 
 .left-menu-item {
     display: flex;
     font-size: 2rem;
-    padding: 12px;
+    padding: 15px;
 }
 
 .left-menu-item p {
@@ -626,10 +629,27 @@ body {
     color: #9e9a9a;
 }
 
+
+/*Right screen: Who to follow */
+.right-search-input {
+    background-color: #EFF3F4;
+    height: 4rem;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    border: 0.1rem solid #d6e1e9;
+    border-radius: 3rem;
+}
+
+.right-search-input input {
+    border-style: none;
+    background-color: #EFF3F4;
+}
+
 .follows {
     position: fixed;
     top: 7rem;
-    left: 57%;
+    left: 60%;
     background-color: #fff;
     width: 35rem;
 }
